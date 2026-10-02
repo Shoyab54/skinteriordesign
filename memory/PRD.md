@@ -40,6 +40,9 @@ Premium, modern, high-end website for interior design company "SK Interior Desig
 - P2: CMS/admin to add gallery images without code changes
 - P2: Before/after slider on project pages
 
+## Deployment config (Vercel)
+- 2026-10-02: Added /app/vercel.json (v2): frontend = @vercel/static-build on frontend/package.json (CRA/craco, distDir build, CI=false to avoid warnings-as-errors), backend = @vercel/python on /app/api/index.py (imports FastAPI app from backend/server.py). Routes: /api/* → serverless function; filesystem; catch-all → /frontend/index.html (SPA). Root /app/requirements.txt = lean deps for the serverless function. No bindings needed (frontend never calls backend). Verified: CRA production build passes; ASGI import + routes OK. Vercel env vars to set: MONGO_URL (Atlas), DB_NAME, CORS_ORIGINS, REACT_APP_BACKEND_URL.
+
 ## Branding assets
 - Official logo: user-provided photo enhanced via PIL (texture/glare removed, flattened to cream tile, 2x upscale + sharpen) at /app/frontend/public/logo.png (932x1130). Used in navbar (38px), mobile nav, footer (72px) with gold hairline border. Favicon: /app/frontend/public/favicon.png (512px, crown+SK crop). Logo component falls back to SVG mark if logo.png missing.
 - Instagram: https://www.instagram.com/sk.interior_desing_in_mumbai (updated 2026-10-02; also in JSON-LD sameAs)
