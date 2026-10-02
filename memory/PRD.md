@@ -40,6 +40,11 @@ Premium, modern, high-end website for interior design company "SK Interior Desig
 - P2: CMS/admin to add gallery images without code changes
 - P2: Before/after slider on project pages
 
+## Branding assets
+- Official logo: user-provided photo enhanced via PIL (texture/glare removed, flattened to cream tile, 2x upscale + sharpen) at /app/frontend/public/logo.png (932x1130). Used in navbar (38px), mobile nav, footer (72px) with gold hairline border. Favicon: /app/frontend/public/favicon.png (512px, crown+SK crop). Logo component falls back to SVG mark if logo.png missing.
+- Instagram: https://www.instagram.com/sk.interior_desing_in_mumbai (updated 2026-10-02; also in JSON-LD sameAs)
+- Phone/WhatsApp: +91 9082443145 · Address: Sakinaka Kharani Road, Andheri East, Mumbai 400072
+
 ## Next tasks
 1. Convert gallery JPEGs to WebP with JPEG fallback
 2. Add sitemap.xml/robots.txt for SEO

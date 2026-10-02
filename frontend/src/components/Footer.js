@@ -15,7 +15,7 @@ export const Footer = () => {
   return (
     <footer className="footer" data-testid="site-footer">
       <div className="footer-brand" data-testid="footer-brand">
-        <Logo size={44} />
+        <Logo size={72} />
         <p>
           Interior design for
           <br />

@@ -107,7 +107,7 @@
 @media (max-width: 640px) { .masonry, .masonry-2 { column-count: 1; } }
 
 /* ——— Company info: logo image, address, socials, map ——— */
-.brand-logo-img { display: block; width: auto; object-fit: contain; }
+.brand-logo-img { display: block; width: auto; object-fit: contain; border: 1px solid rgba(201,168,106,.45); box-shadow: 0 4px 14px rgba(0,0,0,.35); }
 .footer p.footer-address { display: flex; gap: 12px; align-items: flex-start; margin: 24px 0 0; color: var(--muted); font: 11px/1.8 var(--mono); }
 .footer-brand p.footer-address span { font: inherit; letter-spacing: 0; }
 .footer-address svg { flex: 0 0 auto; margin-top: 4px; color: var(--gold); }

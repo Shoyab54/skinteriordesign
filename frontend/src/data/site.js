@@ -11,7 +11,7 @@ export const address =
 export const socials = {
   facebook: "https://www.facebook.com/share/17fx1skHgy/",
   instagram:
-    "https://www.instagram.com/sk.interior_desing?utm_source=qr&stkn=MTh6MW4zNnprODNneg==",
+    "https://www.instagram.com/sk.interior_desing_in_mumbai?utm_source=qr&stkn=MTh6MW4zNnprODNneg==",
   youtube: "https://www.youtube.com/@Skinterrior",
 };
 

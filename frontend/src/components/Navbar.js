@@ -47,7 +47,7 @@ export const Navbar = () => {
         aria-label="SK Interior Design — home"
         onClick={() => setMenuOpen(false)}
       >
-        <Logo />
+        <Logo size={38} />
         <small>SK INTERIOR DESIGN</small>
       </Link>
       <div className={`nav-links ${menuOpen ? "nav-open" : ""}`}>
