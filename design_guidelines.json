@@ -1,0 +1,73 @@
+{
+  "project": "SK Interior Design - Luxury 3D & Cinematic Portfolio",
+  "brand": {
+    "name": "SK Interior Design",
+    "phone": "09082443145",
+    "whatsapp": "+2349082443145",
+    "country_code": "+234",
+    "tagline": "Crafting Timeless Spatial Sanctuaries"
+  },
+  "context": "Marketing / High-End Architecture & Interior Portfolio",
+  "archetype": "LUXURY (Premium, Depth, Mystery) - Archetype 5",
+  "typography": {
+    "headings": {
+      "font_family": "Playfair Display, serif",
+      "weights": ["400", "600", "700"],
+      "tracking": "tracking-tight"
+    },
+    "body": {
+      "font_family": "Montserrat, sans-serif",
+      "weights": ["300", "400", "500"],
+      "tracking": "tracking-normal"
+    }
+  },
+  "colors": {
+    "primary": "#D4AF37",
+    "primary_hover": "#E5C158",
+    "background": "#0C0D0E",
+    "surface": "#16181A",
+    "surface_glass": "rgba(22, 24, 26, 0.75)",
+    "text_main": "#F3F4F6",
+    "text_muted": "#9CA3AF",
+    "border_color": "rgba(212, 175, 55, 0.2)",
+    "forbidden_colors": ["#7351B7", "#1B93A4"]
+  },
+  "visual_enhancers": {
+    "grain_overlay": true,
+    "glassmorphism": "backdrop-blur-xl bg-black/60 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.37)]",
+    "custom_cursor": true,
+    "smooth_scroll": true
+  },
+  "image_urls": {
+    "hero_background": "https://images.unsplash.com/photo-1720247520862-7e4b14176fa8?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "portfolio_1": "https://images.unsplash.com/photo-1663811397219-c572550dffc5?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "portfolio_2": "https://images.unsplash.com/photo-1663811397207-418a92396ad5?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "portfolio_3": "https://images.unsplash.com/photo-1702411200201-3061d0eea802?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "portfolio_4": "https://images.unsplash.com/photo-1704040686413-2c607dbd2f06?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "about_founder": "https://images.unsplash.com/photo-1779405949264-a44d50a14315?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "service_residential": "https://images.unsplash.com/photo-1648881806148-e5c51179c826?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "service_hospitality": "https://images.unsplash.com/photo-1542928658-22251e208ac1?crop=entropy&cs=srgb&fm=jpg&q=85"
+  },
+  "components": [
+    "StickyNavbar",
+    "Cinematic3DHero",
+    "InteractiveProjectSlider",
+    "AboutSectionWithParallax",
+    "ServicesBentoGrid",
+    "TestimonialsAndPress",
+    "ConsultationBookingModal",
+    "FixedWhatsAppButton",
+    "MinimalistFooter"
+  ],
+  "accessibility": {
+    "contrast_ratio": "WCAG AA compliant (minimum 4.5:1)",
+    "prefers_reduced_motion": "Supported via CSS media query check",
+    "data_testid_attributes": "Included across all interactive and key informational elements"
+  },
+  "universal_guidelines": {
+    "no_universal_transition": true,
+    "no_center_align_app": true,
+    "no_forbidden_colors": true,
+    "interactive_state_contrast": true
+  }
+}
