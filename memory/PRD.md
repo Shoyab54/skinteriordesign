@@ -16,11 +16,12 @@ Create a premium, modern, high-end 3D website for SK Interior Design using the b
 - Scroll reveal animations, subtle project image zoom/parallax feel, hover states, floating WhatsApp CTA, phone links and SEO title.
 - Fully responsive desktop/mobile layouts, semantic sections, image alt text, unique data-testid selectors, and reduced-motion support.
 - Verified production build, lint, and frontend E2E behavior at 1920x800 and 390x844 with no reported issues.
+- Added dedicated `/projects/:slug` pages for all four featured projects with hero metadata, project stories, material palettes, three-image galleries, captions, conceptual floor plans, back-to-work navigation, and next-project navigation.
 
 ## Prioritized backlog
 - P0: None.
 - P1: Replace sample project imagery and email address with SK’s final approved content when available.
-- P2: Add project detail routes and a real enquiry form if the studio wants lead capture beyond WhatsApp.
+- P2: Add a real enquiry form if the studio wants lead capture beyond WhatsApp.
 
 ## Next tasks
 - Curate approved SK project photography and captions.
