@@ -7,17 +7,26 @@ import {
   ArrowUpRight,
   ChevronLeft,
   ChevronRight,
+  Facebook,
+  Instagram,
+  MapPin,
   MoveUpRight,
+  Youtube,
 } from "lucide-react";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { Marquee } from "../components/Marquee";
 import { Reveal } from "../components/Reveal";
 import {
+  address,
   contactImage,
+  directionsUrl,
   heroImage,
+  mapEmbedUrl,
+  phone,
   projects,
   services,
+  socials,
   teaserImages,
   whatsapp,
 } from "../data/site";
@@ -88,7 +97,7 @@ export default function Home() {
   const workRef = useRef(null);
   usePageMeta(
     "SK Interior Design — Crafting Timeless Spatial Sanctuaries",
-    "SK Interior Design composes refined residential and commercial interiors across Lagos, Abuja and beyond. Explore our services, signature projects and 85-frame project gallery.",
+    "SK Interior Design composes refined residential and commercial interiors across Mumbai and beyond. Explore our services, signature projects and 85-frame project gallery.",
   );
   const { scrollYProgress } = useScroll({
     target: heroRef,
@@ -127,7 +136,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8, ease: EASE }}
           >
-            LAGOS · ABUJA · BEYOND <span />
+            MUMBAI · MAHARASHTRA · BEYOND <span />
           </motion.p>
           <h1 className="hero-title" data-testid="hero-heading">
             <HeroLine delay={0.65}>Spaces</HeroLine>
@@ -332,7 +341,7 @@ export default function Home() {
         </Reveal>
         <div className="manifesto-bottom">
           <span>— SK INTERIOR DESIGN</span>
-          <span>EST. LAGOS</span>
+          <span>EST. MUMBAI</span>
         </div>
       </section>
 
@@ -362,8 +371,62 @@ export default function Home() {
             </a>
           </Reveal>
           <Reveal className="contact-details" delay={0.26}>
-            <a href="tel:+2349082443145" data-testid="contact-phone-link">090 8244 3145</a>
-            <span>hello@skinteriordesign.com</span>
+            <a href={`tel:${phone.raw}`} data-testid="contact-phone-link">{phone.display}</a>
+            <a href="mailto:hello@skinteriordesign.com" data-testid="contact-email-link">hello@skinteriordesign.com</a>
+          </Reveal>
+          <Reveal className="contact-address" delay={0.3} data-testid="contact-address">
+            <MapPin size={15} />
+            <span>{address}</span>
+          </Reveal>
+          <Reveal className="contact-socials" delay={0.34} data-testid="contact-socials">
+            <a href={socials.facebook} target="_blank" rel="noreferrer" className="social-icon" data-testid="contact-facebook-link" aria-label="SK Interior Design on Facebook">
+              <Facebook size={16} />
+            </a>
+            <a href={socials.instagram} target="_blank" rel="noreferrer" className="social-icon" data-testid="contact-instagram-link" aria-label="SK Interior Design on Instagram">
+              <Instagram size={16} />
+            </a>
+            <a href={socials.youtube} target="_blank" rel="noreferrer" className="social-icon" data-testid="contact-youtube-link" aria-label="SK Interior Design on YouTube">
+              <Youtube size={16} />
+            </a>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="map-section section-pad" id="location" data-testid="map-section">
+        <Reveal className="section-kicker">
+          <span>05</span>
+          <span>Visit the studio</span>
+        </Reveal>
+        <div className="map-grid">
+          <Reveal className="map-info">
+            <h2 className="display-heading">
+              Come see
+              <br />
+              <em>the craft.</em>
+            </h2>
+            <p className="map-address" data-testid="map-address">
+              <MapPin size={16} />
+              <span>{address}</span>
+            </p>
+            <a
+              className="button button-gold"
+              href={directionsUrl}
+              target="_blank"
+              rel="noreferrer"
+              data-testid="get-directions-button"
+            >
+              Get Directions <ArrowUpRight size={16} />
+            </a>
+          </Reveal>
+          <Reveal className="map-frame-wrap" delay={0.12}>
+            <iframe
+              title="SK Interior Design — Sakinaka Kharani Road, Andheri East, Mumbai"
+              src={mapEmbedUrl}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+              data-testid="location-map"
+            />
           </Reveal>
         </div>
       </section>

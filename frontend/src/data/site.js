@@ -1,7 +1,24 @@
 import galleryMeta from "../gallery-meta.json";
 
+export const phone = { display: "+91 90824 43145", raw: "+919082443145" };
+
 export const whatsapp =
-  "https://wa.me/2349082443145?text=Hello%20SK%20Interior%20Design%2C%20I%27d%20like%20to%20discuss%20a%20project.";
+  "https://wa.me/919082443145?text=Hello%20SK%20Interior%20Design%2C%20I%27d%20like%20to%20discuss%20a%20project.";
+
+export const address =
+  "Sakinaka Kharani Road, Andheri East, Mumbai, Maharashtra, India – 400072";
+
+export const socials = {
+  facebook: "https://www.facebook.com/share/17fx1skHgy/",
+  instagram:
+    "https://www.instagram.com/sk.interior_desing?utm_source=qr&stkn=MTh6MW4zNnprODNneg==",
+  youtube: "https://www.youtube.com/@Skinterrior",
+};
+
+const mapsQuery =
+  "Sakinaka Kharani Road, Andheri East, Mumbai, Maharashtra 400072, India";
+export const mapEmbedUrl = `https://www.google.com/maps?q=${encodeURIComponent(mapsQuery)}&output=embed`;
+export const directionsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapsQuery)}`;
 
 export const CATEGORY_LABELS = {
   living: "Living",
@@ -64,7 +81,7 @@ export const projects = [
   {
     slug: "the-obsidian-house",
     name: "The Obsidian House",
-    type: "Residential / Lagos",
+    type: "Residential / Andheri",
     number: "01",
     year: "2024",
     size: "4,200 sq ft",
@@ -78,7 +95,7 @@ export const projects = [
   {
     slug: "aureum-residence",
     name: "Auréum Residence",
-    type: "Luxury Living / Abuja",
+    type: "Luxury Living / Bandra",
     number: "02",
     year: "2023",
     size: "6,800 sq ft",
@@ -92,13 +109,13 @@ export const projects = [
   {
     slug: "the-quiet-form",
     name: "The Quiet Form",
-    type: "Hospitality / Ikoyi",
+    type: "Hospitality / Juhu",
     number: "03",
     year: "2024",
     size: "12,400 sq ft",
     image: byId["050"].src,
     story:
-      "Created for a boutique hospitality concept in the heart of Ikoyi, The Quiet Form lets proportion do the talking. Sculptural furniture floats inside a calm, tactile envelope of sand, shadow and greenery.",
+      "Created for a boutique hospitality concept in the heart of Juhu, The Quiet Form lets proportion do the talking. Sculptural furniture floats inside a calm, tactile envelope of sand, shadow and greenery.",
     materials: ["Terrazzo", "Bouclé wool", "Rattan weave", "Limestone"],
     rooms: ["Arrival lounge", "Dining salon", "Library bar", "Private dining"],
     gallery: pick(["050", "051", "047", "049", "052", "056", "057"]),
@@ -106,7 +123,7 @@ export const projects = [
   {
     slug: "verde-house",
     name: "Verde House",
-    type: "Residential / Lekki",
+    type: "Residential / Powai",
     number: "04",
     year: "2023",
     size: "3,600 sq ft",

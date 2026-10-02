@@ -1,7 +1,7 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Facebook, Instagram, MapPin, Youtube } from "lucide-react";
 import { Logo } from "./Logo";
-import { whatsapp } from "../data/site";
+import { address, phone, socials, whatsapp } from "../data/site";
 import { scrollToTarget } from "../lib/smoothScroll";
 
 export const Footer = () => {
@@ -15,12 +15,31 @@ export const Footer = () => {
   return (
     <footer className="footer" data-testid="site-footer">
       <div className="footer-brand" data-testid="footer-brand">
-        <Logo size={40} />
+        <Logo size={44} />
         <p>
           Interior design for
           <br />
           the quietly particular.
         </p>
+        <p className="footer-address" data-testid="footer-address">
+          <MapPin size={14} />
+          <span>
+            Sakinaka Kharani Road, Andheri East,
+            <br />
+            Mumbai, Maharashtra, India – 400072
+          </span>
+        </p>
+        <div className="footer-socials" data-testid="footer-socials">
+          <a href={socials.facebook} target="_blank" rel="noreferrer" className="social-icon" data-testid="footer-facebook-link" aria-label="SK Interior Design on Facebook">
+            <Facebook size={16} />
+          </a>
+          <a href={socials.instagram} target="_blank" rel="noreferrer" className="social-icon" data-testid="footer-instagram-link" aria-label="SK Interior Design on Instagram">
+            <Instagram size={16} />
+          </a>
+          <a href={socials.youtube} target="_blank" rel="noreferrer" className="social-icon" data-testid="footer-youtube-link" aria-label="SK Interior Design on YouTube">
+            <Youtube size={16} />
+          </a>
+        </div>
       </div>
       <div className="footer-nav">
         <span className="eyebrow">Explore</span>
@@ -34,11 +53,12 @@ export const Footer = () => {
         <a href={whatsapp} target="_blank" rel="noreferrer" data-testid="footer-whatsapp-link">
           WhatsApp <ArrowUpRight size={13} />
         </a>
-        <a href="tel:+2349082443145" data-testid="footer-phone-link">090 8244 3145</a>
+        <a href={`tel:${phone.raw}`} data-testid="footer-phone-link">{phone.display}</a>
+        <a href="mailto:hello@skinteriordesign.com" data-testid="footer-email-link">hello@skinteriordesign.com</a>
       </div>
       <div className="footer-bottom">
         <span>© 2026 SK Interior Design</span>
-        <span>Lagos · Nigeria</span>
+        <span>Mumbai · India</span>
         <span>Crafted with intention</span>
       </div>
     </footer>
